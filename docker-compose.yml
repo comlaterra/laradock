@@ -216,7 +216,7 @@ services:
         - ${DATA_SAVE_PATH}/mysql:/var/lib/mysql
         - ${MYSQL_ENTRYPOINT_INITDB}:/docker-entrypoint-initdb.d
       ports:
-        - "${MYSQL_PORT}:3306"
+        - "${MYSQL_PORT}:3307"
       networks:
         - backend
 
