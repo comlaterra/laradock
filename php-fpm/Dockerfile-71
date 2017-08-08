@@ -290,6 +290,12 @@ RUN if [ ${INSTALL_MSSQL} = true ]; then \
 ;fi
 
 #####################################
+# Python:
+#####################################
+USER root
+RUN apt-get update && apt-get install -y python-pip python-dev build-essential ;
+
+#####################################
 # Image optimizers:
 #####################################
 USER root
