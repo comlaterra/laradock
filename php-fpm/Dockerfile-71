@@ -304,7 +304,7 @@ RUN if [ ${INSTALL_IMAGE_OPTIMIZERS} = true ]; then \
 #####################################
 # PYTHON ANACONDA
 #####################################
-
+USER root
 ARG INSTALL_PYTHON=true
 ENV INSTALL_PYTHON ${INSTALL_PYTHON}
 RUN if [ ${INSTALL_PYTHON} = true ]; then \
@@ -331,7 +331,7 @@ RUN apt-get install -y curl grep sed dpkg && \
 
 ENV PATH /opt/conda/bin:$PATH
 
-RUN conda install --quiet --yes 'pandas' 
+RUN conda install --quiet --yes 'pandas'
 RUN conda install -c conda-forge xgboost=0.6a2
 RUN conda install --yes scikit-learn
 
