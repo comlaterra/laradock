@@ -13,5 +13,3 @@ RUN cd /root/.ssh && chmod 600 * && chmod 644 *.pub
 
 # Set default work directory
 WORKDIR /var/www
-
-
