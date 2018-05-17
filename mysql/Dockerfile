@@ -17,4 +17,4 @@ ADD my.cnf /etc/mysql/conf.d/my.cnf
 
 CMD ["mysqld"]
 
-EXPOSE 3307
+EXPOSE 3306
